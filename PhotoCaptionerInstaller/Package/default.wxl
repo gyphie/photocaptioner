@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="default" xmlns="http://schemas.microsoft.com/wix/2006/localization" Codepage="65001">
+	<!-- This is translation to English (United States) -->
+	<String Id="LANGUAGE">1033</String>
+	<String Id="CULTURE">en-US</String>
+	<String Id="APPNAME">Photo Captioner</String>
+	<String Id="SHORTCUT.UNINSTALLER.NAME">Uninstaller</String>
+	<String Id="FEATURE.UNINSTALLER.TITLE">Uninstaller</String>
+	<String Id="FEATURE.UNINSTALLER.DESCRIPTION">Description of uninstaller</String>
+	<String Id="FEATURE.MAINFEATURE.TITLE">Main feature</String>
+	<String Id="FEATURE.MAINFEATURE.DESCRIPTION">This is description of the main feature of the product</String>
+</WixLocalization>

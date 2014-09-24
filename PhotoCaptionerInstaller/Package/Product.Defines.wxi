@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define AppCode = "PhotoCaptioner" ?>
+  <?define AppProductCode = "{4172af75-73ca-433d-a740-bb2ebee89277}" ?>
+  <?define AppUpgradeCode = "{9ae2eed6-c2d2-4e40-b120-d98c45b8980b}" ?>
+  <?define AppVersionMajor = "1" ?>
+  <?define AppVersionMinor = "0" ?>
+  <?define AppVersionPatch = "0" ?>
+  <?define AppVersionBuild = "0" ?>
+  <?define AppVersion = "$(var.AppVersionMajor).$(var.AppVersionMinor).$(var.AppVersionPatch).$(var.AppVersionBuild)" ?>
+  <?define AppManufacturer = "Jacob Roberts" ?>
+  <?define DefaultCulture = "en-US" ?>
+  <?define GuiType = "WinForms" ?>
+</Include>

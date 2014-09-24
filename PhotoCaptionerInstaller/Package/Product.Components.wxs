@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include Product.Defines.wxi ?>
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramMenuFolder" Name="Programs">
+				<Directory Id="ProgramMenuDir" Name="!(loc.APPNAME)">
+					<Component Id="pmd" Guid="{b4cd65d0-0984-4dc6-8b10-6e88d68a607b}">
+						<RegistryValue Root="HKCU" Key="SOFTWARE\$(var.AppCode)\ProgramMenuDir" Type="string" Value="ProgramMenuDir" KeyPath="yes" />
+						<RemoveFolder Id="ProgramMenuDirRF" On="uninstall" />
+					</Component>
+				</Directory>
+			</Directory>
+			<Directory Id="DesktopFolder" Name="Desktop" />
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLLOCATION" Name="$(var.AppCode)">
+					<Component Id="MainExecutable" Guid="{89b0aa69-6434-4643-9e41-144c5ea8f023}">
+						<File Id="MainExecutableFile" Source="..\ProductBuild\PhotoCaptioner.exe" KeyPath="yes">
+							<Shortcut Id="MainExecutableStartMenu" Directory="ProgramMenuDir" Name="!(loc.APPNAME)" WorkingDirectory="INSTALLDIR" Icon="icon.ico" IconIndex="0" Advertise="yes" />
+							<Shortcut Id="MainExecutableDesktop" Directory="DesktopFolder" Name="!(loc.APPNAME)" WorkingDirectory="INSTALLDIR" Icon="icon.ico" IconIndex="0" Advertise="yes" />
+						</File>
+					</Component>
+					<Component Id="Ookii.Dialogs.dll" Guid="{382225A6-21BC-47F1-895B-C6B48470AE1F}">
+						<File Id="fil7DF38D679818FA682189898D0336468E" KeyPath="yes" Source="..\ProductBuild\Ookii.Dialogs.dll" />
+					</Component>
+				</Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+</Wix>

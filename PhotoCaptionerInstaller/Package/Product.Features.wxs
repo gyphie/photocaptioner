@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<Feature Id="MainFeature" Level="1" Title="!(loc.FEATURE.MAINFEATURE.TITLE)" Description="!(loc.FEATURE.MAINFEATURE.DESCRIPTION)" Display="collapse">
+			<ComponentRef Id="MainExecutable" />
+			<ComponentRef Id="Ookii.Dialogs.dll" />
+			<ComponentRef Id="pmd" />
+		</Feature>
+	</Fragment>
+</Wix>
