@@ -30,6 +30,9 @@ namespace PhotoCaptioner
 			this.lblFontName.Text = Settings.Default.Font.Name;
 			this.btnFontColor.BackColor = Settings.Default.FontColor;
 			this.btnBackgroundColor.BackColor = Settings.Default.BackgroundColor;
+			this.comboSize.SelectedItem = Settings.Default.Size;
+			this.comboPosition.SelectedItem = Settings.Default.Position;
+			this.comboWrapping.SelectedItem = Settings.Default.Wrapping;
 		}
 
 		public void SaveSettings()
@@ -117,7 +120,10 @@ namespace PhotoCaptioner
 					Settings.Default.OutputPath,
 					new System.Windows.Media.FontFamily(Settings.Default.Font.FontFamily.Name),
 					System.Windows.Media.Color.FromRgb(Settings.Default.FontColor.R, Settings.Default.FontColor.G, Settings.Default.FontColor.B),
-					System.Windows.Media.Color.FromRgb(Settings.Default.BackgroundColor.R, Settings.Default.BackgroundColor.G, Settings.Default.BackgroundColor.B)
+					System.Windows.Media.Color.FromRgb(Settings.Default.BackgroundColor.R, Settings.Default.BackgroundColor.G, Settings.Default.BackgroundColor.B),
+					Settings.Default.Size,
+					Settings.Default.Position,
+					Settings.Default.Wrapping
 				);
 			}
 			catch (Exception ex)
@@ -214,7 +220,19 @@ namespace PhotoCaptioner
 			MessageBox.Show(lb.SelectedItem.ToString(), "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
+		private void comboPosition_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			Settings.Default.Position = comboPosition.SelectedItem as string;
+		}
 
+		private void comboSize_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			Settings.Default.Size = comboSize.SelectedItem as string;
+		}
 
+		private void comboWrapping_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			Settings.Default.Wrapping = comboWrapping.SelectedItem as string;
+		}
 	}
 }

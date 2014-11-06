@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="FontColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">White</Value>
+      <Value Profile="(Default)">Black</Value>
     </Setting>
     <Setting Name="BackgroundColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>
@@ -16,6 +16,15 @@
     </Setting>
     <Setting Name="Font" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">Microsoft Sans Serif, 8.25pt</Value>
+    </Setting>
+    <Setting Name="Size" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1/2"</Value>
+    </Setting>
+    <Setting Name="Position" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bottom Below Picture</Value>
+    </Setting>
+    <Setting Name="Wrapping" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Allow 1 line</Value>
     </Setting>
   </Settings>
 </SettingsFile>
