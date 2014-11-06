@@ -290,6 +290,9 @@
 			this.comboSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboSize.FormattingEnabled = true;
 			this.comboSize.Items.AddRange(new object[] {
+            "1/16\"",
+            "1/8\"",
+            "3/16\"",
             "1/4\"",
             "1/2\"",
             "3/4\"",

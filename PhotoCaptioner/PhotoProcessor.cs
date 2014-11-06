@@ -214,7 +214,7 @@ namespace PhotoCaptioner
 			// Determine the caption height
 			double shortSide = Math.Min(width, height);
 			double dpi = shortSide / 4.0d;		// Assume our images are 4" on the short side
-			double captionLineHeight = Math.Max(0, Math.Min(size, 2)) * dpi;	// 1/4" caption
+			double captionLineHeight = Math.Max(0, Math.Min(size, 2)) * dpi;
 			double captionHeight = captionLineHeight;
 
 
@@ -355,6 +355,12 @@ namespace PhotoCaptioner
 		{
 			switch (size)
 			{
+				case @"1/16""":
+					return 0.0625d;
+				case @"1/8""":
+					return 0.125d;
+				case @"3/16""":
+					return 0.1875d;
 				case @"1/4""":
 					return 0.25d;
 				case @"1/2""":

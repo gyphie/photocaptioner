@@ -85,7 +85,7 @@ namespace PhotoCaptioner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1/2\"")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1/4\"")]
         public string Size {
             get {
                 return ((string)(this["Size"]));

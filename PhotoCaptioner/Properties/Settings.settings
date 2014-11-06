@@ -18,7 +18,7 @@
       <Value Profile="(Default)">Microsoft Sans Serif, 8.25pt</Value>
     </Setting>
     <Setting Name="Size" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1/2"</Value>
+      <Value Profile="(Default)">1/4"</Value>
     </Setting>
     <Setting Name="Position" Type="System.String" Scope="User">
       <Value Profile="(Default)">Bottom Below Picture</Value>
